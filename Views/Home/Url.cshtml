@@ -1,0 +1,17 @@
+﻿@model UrlsViewModel
+
+@{
+    ViewData["Title"] = "Shorten-URL";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Shorten the URL</h1>
+    <form method="post" action="/Home/UrlPost">
+        <input type="url" asp-for="longUrl" placeholder="Enter the url here..." name="longUrl" class="form-control" required/>
+        <!--
+            <span asp-validation-for="longUrl" class="text-danger mb-2"></span>
+        -->
+        <input type="submit" class="btn btn-primary mt-2"/>
+    </form>
+    <br/>
+</div>

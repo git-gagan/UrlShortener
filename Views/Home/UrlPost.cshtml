@@ -1,0 +1,20 @@
+﻿
+<h4>Your shortened URL is ready</h4>
+<table class="table table-bordered table-striped" style="width:100%">
+    <thead>
+        <tr>
+            <th>Entered URL</th>
+            <th>Shortened URL</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td width="60%">
+                @ViewData["originalUrl"]
+            </td>
+            <td>
+                <a href="MyUrl/@ViewData["urlSuffix"]" target="_blank">@ViewData["shortUrl"]</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
